@@ -1,8 +1,10 @@
+
 // 322. Coin Change
 // https://leetcode.com/problems/coin-change/description/
+import java.util.Arrays;
 
 class Solution {
-    // Optimal approach using Dynamic Programming
+    // Optimal approach using Dynamic Programming and memoization
     // Time Complexity: O(n * m) where n is the amount and m is the number of coins
     // Space Complexity: O(n) for the dp array
     // where n is the amount and m is the number of coins
@@ -11,9 +13,7 @@ class Solution {
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
         // Initialize the dp array with a value greater than amount
-        for (int i = 1; i <= amount; i++) {
-            dp[i] = amount + 1;
-        }
+        Arrays.fill(dp, amount + 1);
         dp[0] = 0; // Base case: 0 coins are needed to make amount 0
 
         for (int coin : coins) {
