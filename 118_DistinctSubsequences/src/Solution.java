@@ -35,5 +35,4 @@ class Solution {
         int result = solution.numDistinct(s, t);
         System.out.println("Number of distinct subsequences: " + result); // Output: 3
     }
-
 }
