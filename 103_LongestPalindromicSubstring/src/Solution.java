@@ -1,8 +1,10 @@
+// 5. Longest Palindromic Substring
+// https://leetcode.com/problems/longest-palindromic-substring/
 class Solution {
-    // 5. Longest Palindromic Substring
-    // https://leetcode.com/problems/longest-palindromic-substring/
     // Dynamic Programming using 2 pointers to check for palindromes
-    // Time complexity: O(n^2)
+    // The function checks for palindromes by expanding around the center
+    // and keeps track of the longest palindrome found so far.
+    // Time complexity: O(n^2), where n is the length of the string
     // Space complexity: O(1)
     public String longestPalindrome(String s) {
         // Edge cases
