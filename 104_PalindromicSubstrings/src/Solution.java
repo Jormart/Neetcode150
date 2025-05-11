@@ -32,6 +32,5 @@ class Solution {
         System.out.println(solution.countSubstrings("abc")); // Output: 3
         System.out.println(solution.countSubstrings("aaa")); // Output: 6
         System.out.println(solution.countSubstrings("ababa")); // Output: 9
-        System.out.println(solution.countSubstrings("a")); // Output: 1
     }
 }
